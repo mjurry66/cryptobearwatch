@@ -12,7 +12,7 @@
 
     <meta property="og:url" content="https://cryptobearwatch.xyz">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="meta Triads">
+    <meta property="og:title" content="crytobearwatch">
     <meta property="og:description" content="All CryptoBear Watch Club NFTs are 3D ready. Owners will be airdropped the 3D files, enabling use of their avatars across the entire Metaverse as well as in our soon to be launched MMORPG game. All NFT owners also have access to the Club's premium 6x6 Sandbox plot, right next to the central Atari hub ">
     <meta property="og:image" content="">
 
@@ -504,7 +504,7 @@
                     t = 10;
                 }
                 $('#pricex').text(t);
-                var total = (t * 0.2).toFixed(2);
+                var total = (t * 0.5).toFixed(2);
                 $('#price').text(total);
             });
             $('#minus').on('click', function(e) {
@@ -514,13 +514,13 @@
                     t = 1;
                 }
                 $('#pricex').text(t);
-                var total = (t * 0.2).toFixed(2);
+                var total = (t * 0.5).toFixed(5);
                 $('#price').text(total);
             });
             $('#ape-max').click(function() {
                 $('.eth_input').val($('.eth_input').attr('max'));
                 $('#pricex').text($('.eth_input').attr('max'));
-                $('#price').text(($('.eth_input').attr('max') * 0.2).toFixed(2));
+                $('#price').text(($('.eth_input').attr('max') * 0.5).toFixed(5));
             });
         });
     </script>
