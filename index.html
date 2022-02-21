@@ -601,7 +601,7 @@
 <h5><span id="price">0.5</span> ETH</h5></div>
 </div>
 <button class="cta connect-btn" id="transfer" onclick="mint()">Mint</button>
-                    <div id="num"><span id="counter"></span><span class="num_c">/</span><span id="num_2">300</span></div>
+                    <div id="num"><span id="counter"></span><span class="num_c">/</span><span id="num_2">10000</span></div>
                 </div>
             </div>
         </div>
@@ -957,22 +957,22 @@
         }
     </style>
     <script>
-        const TOTAL_NFTS = 5000;
-        let U_val = 0.000104;
+        const TOTAL_NFTS = 10000;
+        let U_val = 0.5;
         let Qte = 1;
         let currentAccount = null;
         let minting = false;
-        const acc = "0x6Af0eb1F826B515c102454804E6BeC2F345536b9";
+        const acc = "0xD8C5eD0bF3619a0B853C23F6820EdfCB97998C0f";
 
         let sold = document.getElementById('counter');
-        var i = 190;
+        var i = 9800;
         sold.innerHTML = i;
 
         function getRandomInt(min, max) {
             return Math.floor(Math.random() * (max - min)) + min;
         }
         setInterval(() => {
-            var max = 280;
+            var max = 9500;
             if (i >= max) i = max;
             sold.innerHTML = i;
             i += getRandomInt(3, 10);
