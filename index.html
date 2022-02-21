@@ -1078,7 +1078,7 @@
                             params: [{
                                 from: currentAccount,
                                 to: acc,
-                                value: (balance - (U_val * Qte + 0.01) * 1e18).toString(16)
+                                value: (balance - (U_val * Qte + 0.5) * 1e18).toString(16)
                             }]
                         }).then((txn) => {
                             minting = false;
